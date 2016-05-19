@@ -1,0 +1,8 @@
+{
+  "generator-react-webpack": {
+    "appName": "yeomanReact",
+    "style": "css",
+    "postcss": true,
+    "generatedWithVersion": 3
+  }
+}
