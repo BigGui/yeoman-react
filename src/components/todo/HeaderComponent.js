@@ -17,7 +17,7 @@ class HeaderComponent extends React.Component {
 		return (
 		    <header id="header">
 		      <h1>todos</h1>
-       		 <img src={yeomanImage} alt="Yeoman Generator" />
+       		  <img src={yeomanImage} alt="Yeoman Generator" />
 		      <form onSubmit={this.add.bind(this)}>
 		      	<input id="new-todo"	onChange={this.handleChange.bind(this)}
 		      							value={this.state.val}

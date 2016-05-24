@@ -45,6 +45,7 @@ class ListComponent extends React.Component {
 									itemId={i}
 									delete={self.deleteItem.bind(self)}
 									toggle={self.toggleItem.bind(self)}
+									edit={self.editItem.bind(self)}
 						/>
 					);
 				});
@@ -85,6 +86,11 @@ class ListComponent extends React.Component {
 
 	addItem(value) {
 		this.state.todos.push({ name: value, completed: false});
+		this.setState({todos: this.state.todos});
+	}
+
+	editItem(itemId, value) {
+		this.state.todos[itemId].name = value;
 		this.setState({todos: this.state.todos});
 	}
 
